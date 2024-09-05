@@ -774,10 +774,3 @@ input[type="checkbox"]::after {
   pointer-events: none;
   color: inherit;
 }
-
-@font-face {
-  font-family: "Material Symbols Sharp";
-  font-style: normal;
-  font-weight: 300;
-  src: url("icons/material-icons.woff") format("woff");
-}
