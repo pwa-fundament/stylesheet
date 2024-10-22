@@ -163,8 +163,12 @@ input::placeholder {
     background: var(--slider-background);
 }
 
-.slider-wrapper div {
+.slider-wrapper div.value {
     background: var(--slider-value-background);
+}
+
+.slider-wrapper div.thumb {
+    background: var(--slider-thumb-background);
 }
 
 /* surface */
@@ -223,6 +227,23 @@ button > div,
     flex-direction: column;
 }
 
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.slider-wrapper div.thumb {
+    transform: translateX(-50%);
+
+    display: block;
+    position: absolute;
+    top: unset;
+    bottom: unset;
+
+    width: var(--slider-thumb-width);
+    height: var(--slider-thumb-height);
+}
+
 /*
     DEPTH
 */
@@ -235,7 +256,8 @@ select {
 input,
 textarea,
 [role="progressbar"],
-.slider-wrapper {
+.slider-wrapper,
+.slider-wrapper div.thumb {
     box-shadow: var(--input-shadow);
 }
 
@@ -243,8 +265,11 @@ textarea,
     box-shadow: var(--progress-value-shadow);
 }
 
-.slider-wrapper div {
+.slider-wrapper div.value {
     box-shadow: var(--slider-value-shadow);
+}
+.slider-wrapper div.thumb {
+    box-shadow: var(--slider-thumb-shadow);
 }
 
 /*
@@ -333,6 +358,10 @@ textarea {
 .slider-wrapper,
 .slider-wrapper div {
     border-radius: var(--slider-corner-radius);
+}
+
+.slider-wrapper div.thumb {
+    border-radius: var(--slider-thumb-corner-radius);
 }
 
 .surface {
