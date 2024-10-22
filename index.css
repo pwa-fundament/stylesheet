@@ -27,6 +27,7 @@ body {
 
 main {
     padding: var(--content-padding);
+    height: 100%;
 }
 
 button,
@@ -333,7 +334,7 @@ textarea:focus,
 }
 
 hr {
-    border-bottom: var(--border-width) solid var(--hr-color);
+    border-bottom: var(--line-width) solid var(--hr-color);
 }
 
 /*
