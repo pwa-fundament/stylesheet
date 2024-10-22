@@ -111,6 +111,10 @@ button.danger:active {
     background: var(--danger-button-active);
 }
 
+button span {
+    color: inherit;
+}
+
 /* input etc */
 input,
 textarea {
@@ -689,6 +693,9 @@ ol {
     top: 0px;
     right: 6px;
     bottom: 0px;
+
+    display: flex;
+    align-items: center;
 }
 
 /* SLIDER */
