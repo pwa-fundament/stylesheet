@@ -532,6 +532,11 @@ textarea,
     ELEMENT-SPECIFIC
 */
 
+/* BUTTON */
+button .icon {
+    font-size: var(--button-icon-size);
+}
+
 /* CHECKBOX & RADIO */
 input[type="checkbox"],
 input[type="radio"] {
