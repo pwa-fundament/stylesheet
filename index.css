@@ -532,11 +532,6 @@ textarea,
     ELEMENT-SPECIFIC
 */
 
-/* BUTTON */
-button .icon {
-    font-size: var(--button-icon-size);
-}
-
 /* CHECKBOX & RADIO */
 input[type="checkbox"],
 input[type="radio"] {
@@ -765,4 +760,12 @@ body {
 
 code {
     font-family: var(--font-mono);
+}
+
+.icon {
+    font-size: var(--icon-size);
+}
+
+button .icon {
+    font-size: var(--button-icon-size);
 }
